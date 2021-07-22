@@ -40,8 +40,8 @@ const Section1 = {
   actions: {
     tableNotVisible(){
       
-      cy.visit('http://localhost:8080', { responseTimeout: 40000 })
-      cy.get('a').eq(2).click()
+      cy.visit('http://localhost:8080/section-2')
+      
       cy.get(Section1.elements.Section1Button)
       .click()
       .then(()=>{
